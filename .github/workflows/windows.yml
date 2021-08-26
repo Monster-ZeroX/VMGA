@@ -17,11 +17,11 @@ jobs:
         WINDOWS_USER_PASSWORD: ${{ secrets.WINDOWS_USER_PASSWORD }}
     - name: Download
       run: |
-       Invoke-WebRequest https://github.com/RealKoolisw/assets/blob/main/Github-RDP/ngrok.exe?raw=true -OutFile ngrok.exe
-       Invoke-WebRequest https://github.com/RealKoolisw/assets/blob/main/Github-RDP/nssm.exe?raw=true -OutFile nssm.exe
-       Invoke-WebRequest https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/resources/ngrok-user.bat -OutFile ngrok-user.bat
-       Invoke-WebRequest https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/resources/ngrok-start.bat -OutFile ngrok-start.bat
-       Invoke-WebRequest https://raw.githubusercontent.com/RealKoolisw/VirtualMachine-GithubAction/main/resources/ngrok-loop.bat -OutFile ngrok-loop.bat
+       Invoke-WebRequest https://gitlab.com/reaitten/vmga-assets/-/raw/main/windows/ngrok.exe?raw=true -OutFile ngrok.exe
+       Invoke-WebRequest https://gitlab.com/reaitten/vmga-assets/-/raw/main/windows/nssm.exe?raw=true -OutFile nssm.exe
+       Invoke-WebRequest https://raw.githubusercontent.com/reaitten/VMGA/main/resources/ngrok-user.bat -OutFile ngrok-user.bat
+       Invoke-WebRequest https://raw.githubusercontent.com/reaitten/VMGA/main/resources/ngrok-start.bat -OutFile ngrok-start.bat
+       Invoke-WebRequest https://raw.githubusercontent.com/reaitten/VMGA/main/resources/ngrok-loop.bat -OutFile ngrok-loop.bat
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
         copy nssm.exe C:\Windows\System32

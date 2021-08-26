@@ -7,7 +7,7 @@ on:
         description: 'Enter ChromeRemoteDesktop Headless code'
         required: true
       pincode:
-        description: 'Six digit Pin'
+        description: 'Six Digit Pin'
         required: true
 
 jobs:

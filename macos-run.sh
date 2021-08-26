@@ -27,7 +27,7 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 
 # install ngrok, anydesk and watch.
 brew update
-brew install --cask ngrok anydesk
+brew install --cask ngrok anydesk firefox qbittorrent
 
 # https://stackoverflow.com/questions/16242025/term-environment-variable-not-set#16252511
 set | grep TERM

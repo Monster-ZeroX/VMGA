@@ -1,4 +1,4 @@
-name: Ubuntu ssh Virtual Machine
+name: Ubuntu SSH VM
 on: 
   workflow_dispatch:
 defaults:

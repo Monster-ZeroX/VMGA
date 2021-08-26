@@ -1,4 +1,4 @@
-name: Ubuntu Desktop Virtual Machine
+name: Ubuntu Desktop VM
 on: 
   workflow_dispatch:
    inputs:
@@ -6,7 +6,7 @@ on:
         description: 'Enter ChromeRemoteDesktop Headless code'
         required: true
       pincode:
-        description: 'Six digit Pin'
+        description: 'Six Digit Pin'
         required: true
 defaults:
   run:
